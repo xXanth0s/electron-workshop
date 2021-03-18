@@ -3,8 +3,8 @@ export class ToDoService {
   #tasks = {
     1: {
       id: '1',
-      title: 'Neue Bewerbung schreieben',
-      description: 'Am besten bei adesso :D',
+      title: 'Mal wieder richtig einen heben gehen',
+      description: 'Corona fürn A**ch',
       approved: false
     },
     2: {

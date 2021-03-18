@@ -4,8 +4,8 @@ export class ToDoService {
     this.tasks = [
       {
         id: '0',
-        title: 'Neue Bewerbung schreiben',
-        description: 'Am besten bei adesso :D'
+        title: 'Mal wieder richtig einen heben gehen',
+        description: 'Corona fürn A**ch'
       },
       {
         id: '1',
