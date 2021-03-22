@@ -1,6 +1,6 @@
 {
-  "name": "forge_webpack_app",
-  "productName": "forge_webpack_app",
+  "name": "3-message-creator-solution",
+  "productName": "3-message-creator-solution",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",

@@ -1,6 +1,6 @@
 {
-  "name": "to-",
-  "productName": "my-new-app",
+  "name": "1-reordering-and-build_template",
+  "productName": "1-reordering-and-build_template",
   "version": "1.0.0",
   "description": "Awesome To-Do App",
   "main": ".webpack/main",

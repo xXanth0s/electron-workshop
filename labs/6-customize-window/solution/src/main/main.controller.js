@@ -104,6 +104,7 @@ export class MainController {
       window.webContents.openDevTools();
     }
 
+
     return window;
   }
 

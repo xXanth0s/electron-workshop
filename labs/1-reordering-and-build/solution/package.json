@@ -1,6 +1,6 @@
 {
-  "name": "forge_webpack_app",
-  "productName": "forge_webpack_app",
+  "name": "1-reordering-and-build_solution",
+  "productName": "1-reordering-and-build_solution",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",

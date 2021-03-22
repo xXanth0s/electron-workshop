@@ -1,11 +1,5 @@
 import { BrowserWindow, ipcMain } from 'electron';
-import {
-  addToDoTaskMessage,
-  getAllToDoTasks,
-  openAddToDoTaskPageMessage,
-  toDoTaskAddedMessage,
-  toggleToDoTaskMessage
-} from '../messages/messages.creator';
+import { getAllToDoTasks, toggleToDoTaskMessage } from '../messages/messages.creator';
 import { ToDoService } from './services/to-do.service';
 
 export class MainController {

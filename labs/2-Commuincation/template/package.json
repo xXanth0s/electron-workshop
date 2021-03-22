@@ -1,6 +1,6 @@
 {
-  "name": "forge_webpack_app",
-  "productName": "forge_webpack_app",
+  "name": "2-Commuincation-template",
+  "productName": "2-Commuincation-template",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",

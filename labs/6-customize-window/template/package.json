@@ -1,6 +1,6 @@
 {
-  "name": "browser",
-  "productName": "browser",
+  "name": "6-customize-window-template",
+  "productName": "6-customize-window-template",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",

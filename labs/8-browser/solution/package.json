@@ -1,6 +1,6 @@
 {
-  "name": "browser",
-  "productName": "browser",
+  "name": "8-browser-solution",
+  "productName": "8-browser-solution",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",

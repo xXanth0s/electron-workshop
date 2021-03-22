@@ -1,6 +1,6 @@
 {
-  "name": "forge_webpack_app",
-  "productName": "forge_webpack_app",
+  "name": "5-storage-template",
+  "productName": "5-storage-template",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",
