@@ -10,6 +10,7 @@ import {
   toggleToDoTaskMessage
 } from '../messages/messages.creator';
 import { ToDoService } from './services/to-do.service';
+import electronIsDev from 'electron-is-dev';
 
 export class MainController {
 
@@ -99,7 +100,9 @@ export class MainController {
     // and load the overview.html of the app.
     window.loadURL(pageUrl);
 
-    window.webContents.openDevTools();
+    if (electronIsDev) {
+      window.webContents.openDevTools();
+    }
 
     return window;
   }

@@ -37,6 +37,7 @@
     "@cliqz/adblocker-electron": "^1.20.2",
     "bootstrap": "^4.6.0",
     "cross-fetch": "^3.0.6",
+    "electron-is-dev": "^2.0.0",
     "electron-squirrel-startup": "^1.0.0"
   }
 }

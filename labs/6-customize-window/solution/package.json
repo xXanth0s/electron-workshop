@@ -9,7 +9,8 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "generateIcons": "electron-icon-builder --input=./assets/icon.jfif --output=./"
   },
   "keywords": [],
   "author": {
@@ -38,6 +39,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "css-loader": "^4.2.1",
     "electron": "11.2.1",
+    "electron-icon-builder": "^2.0.1",
     "html-webpack-plugin": "^5.0.0-beta.6",
     "node-loader": "^1.0.1",
     "style-loader": "^1.2.1",
