@@ -1,4 +1,7 @@
 import { app, BrowserWindow } from 'electron';
+import { ElectronBlocker } from '@cliqz/adblocker-electron';
+import fetch from 'cross-fetch'; // required 'fetch'
+
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -11,7 +14,7 @@ const createWindow = () => {
     width: 1400,
     height: 800,
     webPreferences: {
-      webviewTag: true
+      webviewTag: true,
     }
   });
 
@@ -20,6 +23,10 @@ const createWindow = () => {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+
+  ElectronBlocker.fromPrebuiltAdsAndTracking(fetch).then((blocker) => {
+    blocker.enableBlockingInSession(mainWindow.webContents.session);
+  });
 };
 
 // This method will be called when Electron has finished

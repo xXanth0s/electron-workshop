@@ -1,4 +1,5 @@
 import { BrowserWindow } from 'electron';
+import electronIsDev from 'electron-is-dev';
 
 export class MainController {
 
@@ -23,9 +24,10 @@ export class MainController {
       },
     });
 
-    // and load the overview.html of the app.
     mainWindow.loadURL(pageUrl);
 
-    mainWindow.webContents.openDevTools();
+    if (electronIsDev) {
+      mainWindow.webContents.openDevTools();
+    }
   }
 }

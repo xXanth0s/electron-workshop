@@ -9,3 +9,9 @@ window.navbar = {
   forward: () => webivew().canGoForward() && webivew().goForward(),
   navigate: () => webivew().loadURL(urlInput().value),
 }
+
+const webivew = () => document.querySelector('webview');
+
+webivew().canGoBack() && webivew().goBack();
+webivew().canGoForward() && webivew().goForward();
+webivew().loadURL('https://eis.de');

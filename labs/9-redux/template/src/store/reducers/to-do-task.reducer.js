@@ -5,8 +5,8 @@ const toDoTaskSlice = createSlice({
   initialState: {
     0: {
       id: '0',
-      title: 'Mal wieder richtig einen heben gehen',
-      description: 'Corona fürn A**ch'
+      title: 'Mal wieder richtig einen Heben gehen',
+      description: 'Im Augustinerkeller'
     },
     1: {
       id: '1',

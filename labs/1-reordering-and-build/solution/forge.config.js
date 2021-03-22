@@ -1,5 +1,7 @@
 module.exports = {
-  "packagerConfig": {},
+  "packagerConfig": {
+    icon: 'assets/icon.ico'
+  },
   "makers": [
     {
       "name": "@electron-forge/maker-squirrel",
