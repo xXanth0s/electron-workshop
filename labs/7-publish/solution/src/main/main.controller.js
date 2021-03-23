@@ -34,7 +34,6 @@ export class MainController {
         .on(
             openAddToDoTaskPageMessage.type,
             (event, args) => {
-              console.log(addToDoTaskMessage.type, ' message received', args)
               this.#handleOpenAddToDoTaskPage()
             })
         .on(

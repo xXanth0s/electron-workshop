@@ -4,3 +4,5 @@ import 'regenerator-runtime/runtime';
 
 import 'bootstrap'
 import './styles/styles.css'
+
+import './pages/js/window'

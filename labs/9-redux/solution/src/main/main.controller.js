@@ -1,20 +1,14 @@
 import { BrowserWindow, ipcMain, session } from 'electron';
 import * as path from 'path';
 import {
-  addToDoTaskMessage,
   closeWindowMessage,
-  getAllToDoTasks,
   maximizeWindowMessage,
   minimizeWindowMessage,
   openAddToDoTaskPageMessage,
-  toDoTaskAddedMessage,
-  toggleToDoTaskMessage
 } from '../messages/messages.creator';
-import { ToDoService } from './services/to-do.service';
 
 export class MainController {
 
-  #toDoService = new ToDoService();
   #overviewWindow;
 
   constructor() {
@@ -29,20 +23,9 @@ export class MainController {
   #registerMainMessageHandler() {
     ipcMain
         .on(
-            toggleToDoTaskMessage.type,
-            (event, args) => {
-              this.#handleToggleToDoTask(args.payload.id);
-            })
-        .on(
             openAddToDoTaskPageMessage.type,
             (event, args) => {
-              console.log(addToDoTaskMessage.type, ' message received', args)
               this.#handleOpenAddToDoTaskPage()
-            })
-        .on(
-            addToDoTaskMessage.type,
-            (event, args) => {
-              this.#handleAddToDoTask(event.sender, args.payload.task)
             })
         .on(
             closeWindowMessage.type,
@@ -59,12 +42,6 @@ export class MainController {
             (event, args) => {
               this.#handlemaximizeWindowTask(event.sender)
             });
-
-    ipcMain.handle(
-        getAllToDoTasks.type,
-        () => {
-          return this.#handleGetAllToDoTasks();
-        });
   }
 
   #addReduxDevTooles() {
@@ -73,18 +50,8 @@ export class MainController {
     );
   }
 
-  #handleToggleToDoTask(taskId) {
-    this.#toDoService.toggleTask(taskId)
-  }
-
   #handleOpenAddToDoTaskPage() {
     this.#openPage(ADDTASK_WEBPACK_ENTRY);
-  }
-
-  #handleAddToDoTask(sender, taskToAdd) {
-    const task = this.#toDoService.addTask(taskToAdd)
-    this.#overviewWindow.webContents.send(toDoTaskAddedMessage.type, toDoTaskAddedMessage({ task }))
-    BrowserWindow.fromWebContents(sender).close();
   }
 
   #openPage(pageUrl) {
@@ -110,10 +77,6 @@ export class MainController {
     window.webContents.openDevTools();
 
     return window;
-  }
-
-  #handleGetAllToDoTasks() {
-    return this.#toDoService.getAllTasks();
   }
 
   #handleminimzeWindowTask(sender) {
