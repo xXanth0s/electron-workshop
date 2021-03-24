@@ -22,7 +22,7 @@ export class MainController {
           return this.#toDoService.tasks;
         });
 
-    ipcMain.handle(
+    ipcMain.on(
         TOGGLE_TASK_MESSAGE,
         (event, args) => {
           this.#toDoService.toggleTasks(args);

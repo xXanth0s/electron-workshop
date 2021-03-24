@@ -1,6 +1,6 @@
 {
   "name": "5-storage-template",
-  "productName": "5-storage-template",
+  "productName": "5-storage-solution",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",
@@ -46,6 +46,8 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "bootstrap": "^4.6.0",
+    "core-js": "^3.9.1",
+    "electron-store": "^7.0.1",
     "electron-squirrel-startup": "^1.0.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"

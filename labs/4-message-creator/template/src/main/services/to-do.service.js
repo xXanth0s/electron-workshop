@@ -18,6 +18,7 @@ export class ToDoService {
 
   toggleTasks(id) {
     this.tasks[id].checked = !this.tasks[id].checked;
+    console.log(this.tasks);
   }
 
   addTask(task) {

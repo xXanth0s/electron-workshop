@@ -5,12 +5,14 @@ export class ToDoService {
       {
         id: '0',
         title: 'Mal wieder richtig einen Heben gehen',
-        description: 'Im Augustinerkeller'
+        description: 'Im Augustinerkeller',
+        approved: false
       },
       {
         id: '1',
         title: 'Electron App bauen',
-        description: 'Electron ist MEEEGA Geil'
+        description: 'Electron ist MEEEGA Geil',
+        approved: true
       }
     ];
     this.currentIndex = 2;

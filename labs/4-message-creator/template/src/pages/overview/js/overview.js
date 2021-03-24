@@ -5,7 +5,7 @@ import { addTaskToHtml } from './html';
 
 window.toDo = {
   toggleTask(id) {
-    return ipcRenderer.invoke(TOGGLE_TASK_MESSAGE, id);
+    ipcRenderer.send(TOGGLE_TASK_MESSAGE, id);
   },
   openAddToDoTaskPage() {
     console.log('add ToDoTask');

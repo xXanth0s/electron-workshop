@@ -1,7 +1,6 @@
 import './pollyfills'
 import './index.css';
 import { ipcRenderer } from 'electron';
-import { TOGGLE_TASK_MESSAGE } from '../../../2-Commuincation/solution/src/messages/messages.const';
 
 const fallbackTask = {
   id: '42',
@@ -49,7 +48,7 @@ export function addTaskToHtml(task = fallbackTask) {
 
 window.toDo = {
   toggleTask(id) {
-    return ipcRenderer.invoke(TOGGLE_TASK_MESSAGE, id);
+    console.log('toggle task:', id);
   },
   openAddToDoTaskPage() {
     console.log('add ToDoTask');
