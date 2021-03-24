@@ -56,17 +56,4 @@ window.toDo = {
   },
 };
 
-const toDoTasks = [
-  {
-    id: '1',
-    title: 'Mal wieder richtig einen Heben gehen',
-    description: 'Im Augustinerkeller'
-  },
-  {
-    id: '2',
-    title: 'Electron App bauen',
-    description: 'Electron ist MEEEGA Geil'
-  }
-];
-
-addTaskToHtml(toDoTasks)
+addTaskToHtml()
