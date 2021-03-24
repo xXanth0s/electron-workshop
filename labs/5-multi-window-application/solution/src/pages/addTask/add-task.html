@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding Task</title>
+</head>
+<body>
+<div class="container">
+    <h1>Awesome To Do App</h1>
+    <div class="form-group">
+        <label for="toDoTitle">Title</label>
+        <input type="text" class="form-control" id="toDoTitle" placeholder="Enter task title">
+    </div>
+    <div class="form-group">
+        <label for="toDoDescription">Description</label>
+        <textarea type="text" class="form-control" id="toDoDescription" placeholder="Enter task description" rows="3"></textarea>
+    </div>
+    <div id="error-container"></div>
+    <button class="btn btn-primary mt-3 float-right" onclick="toDoAddTask.addTask()">Add To Do Task</button>
+</div>
+</body>
+</html>
