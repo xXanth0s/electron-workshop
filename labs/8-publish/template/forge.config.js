@@ -22,6 +22,18 @@ module.exports = {
       "config": {}
     }
   ],
+  "publishers": [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'me',
+          name: 'test_electron'
+        },
+        prerelease: true
+      }
+    }
+  ],
   "plugins": [
     [
       "@electron-forge/plugin-webpack",

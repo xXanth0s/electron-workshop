@@ -1,7 +1,9 @@
 import { MainController } from './main/main.controller';
+import {autoUpdater} from "electron-updater";
 
 const { app, BrowserWindow } = require('electron');
-const path = require('path');
+
+autoUpdater.checkForUpdates();
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
