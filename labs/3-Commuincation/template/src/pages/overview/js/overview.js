@@ -22,7 +22,7 @@ const tasks = [
     id: '1',
     title: 'Electron App bauen',
     description: 'Electron ist MEEEGA Geil',
-    approve: true
+    approved: true
   }
 ];
 

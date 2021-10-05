@@ -30,7 +30,7 @@ module.exports = {
           owner: 'me',
           name: 'test_electron'
         },
-        prerelease: true
+        draft: true
       }
     }
   ],
