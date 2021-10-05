@@ -53,6 +53,7 @@
     "electron-store": "^7.0.1",
     "electron-updater": "^4.3.8",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "update-electron-app": "^2.0.1"
   }
 }
