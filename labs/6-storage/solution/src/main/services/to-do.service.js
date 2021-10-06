@@ -3,7 +3,14 @@ import { storageSchema } from '../storage/config/storage.schema';
 const Store = require('electron-store');
 
 export class ToDoService {
-  #tasks = {};
+  #tasks = {
+    0: {
+      id: 0,
+      title: 'Electron lernen',
+      description: 'Auf den JavaScript Days',
+      checked: true
+    }
+  };
 
   #currentIndex = -1
   #store = new Store({ schema: storageSchema });
